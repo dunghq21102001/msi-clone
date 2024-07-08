@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet"> -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" type="image/svg+xml" href="https://logowik.com/content/uploads/images/142_msi_gaming.jpg" />
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/slider.css">
+    <title>MSI</title>
+</head>
+
+<body>
+    <!-- header -->
+    <header class="w-full bg-white flex items-center justify-between px-[25px] my-2 max-h-[76px]">
+
+        <button class="block lg:hidden dropbtn relative">
+            <i class="fa-solid fa-bars text-[20px] " onclick="toggleMenu()"></i>
+            <div id="myDropdown" class="dropdown-content">
+                <div class="w-full">
+                    <div class="h-vertical-tabs">
+                        <div class="h-tab-item" onclick="toggleTabHeader(6)">Sản phẩm <i
+                                class="fa-solid fa-chevron-right"></i></div>
+                        <div class="h-tab-content" id="tab6">
+                            <ul class="flex flex-col mt-4 footer-list2 items-start">
+                                <li>Máy tính xách tay</li>
+                                <li>Handhelds</li>
+                                <li>Màn hình / Máy tính để bàn</li>
+                                <li>Card đồ hoạ</li>
+                                <li>Bo mạch chủ / Vỏ máy tính & linh kiện</li>
+                            </ul>
+                        </div>
+
+                        <div class="h-tab-item" onclick="toggleTabHeader(7)">Giải pháp AIoT <i
+                                class="fa-solid fa-chevron-right"></i></div>
+                        <div class="h-tab-content" id="tab7">
+                            <ul class="flex flex-col mt-4 footer-list2 items-start">
+                                <li>Giải pháp sạc EV</li>
+                                <li>Máy chủ, mạng & IIoT</liMay>
+                                <li>Giải pháp thương mại & Tự động hoá</li>
+                                <li>Giải pháp FUTORO</li>
+                            </ul>
+                        </div>
+
+                        <div class="h-tab-item" onclick="toggleTabHeader(8)">Có gì mới <i
+                                class="fa-solid fa-chevron-right"></i></div>
+                        <div class="h-tab-content" id="tab8">
+                            <ul class="flex flex-col mt-4 footer-list2 items-start">
+                                <li>Giới thiệu</li>
+                                <li>Khuyến mãi</li>
+                                <li>Blogs</li>
+                                <li>Lời chia sẻ</li>
+                            </ul>
+                        </div>
+
+                        <div class="h-tab-item" onclick="toggleTabHeader(9)">Cộng đồng <i
+                                class="fa-solid fa-chevron-right"></i></div>
+                        <div class="h-tab-content" id="tab9">
+                            <ul class="flex flex-col mt-4 footer-list2 items-start">
+                                <li>Tin tức từ MSI</li>
+                                <li>Blog</li>
+                                <li>Video</li>
+                                <li>Mạng xã hội</li>
+                                <li>Diễn đàn</li>
+                                <li>Đội game</li>
+                                <li>Chia sẻ từ khách hàng</li>
+                            </ul>
+                        </div>
+
+                        <div class="h-tab-item" onclick="toggleTabHeader(10)">Hỗ trợ <i
+                                class="fa-solid fa-chevron-right"></i></div>
+                        <div class="h-tab-content" id="tab10">
+                            <ul class="flex flex-col mt-4 footer-list2 items-start">
+                                <li>Tải xuống</li>
+                                <li>Trung tâm thành viên</li>
+                                <li>Chăm sóc khách hàng trực tuyến</li>
+                                <li>Địa chỉ trung tâm bảo hành</li>
+                                <li>Bảo hành</li>
+                                <li>Hỗ trợ từ xa</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </button>
+        <div class="flex items-center lg:justify-start justify-center w-[85%]">
+            <img src="./images/logo.png" class="cursor-pointer w-[35%] md:w-[12%] lg:w-[10%]" alt="">
+            <div class="hidden lg:flex ml-[50px] w-[80%]">
+                <ul class="flex items-center w-full">
+                    <li class="header-proName">Sản phẩm</li>
+                    <li class="header-proName">Giải pháp AIoT</li>
+                    <li class="header-proName">Có gì mới</li>
+                    <li class="header-proName">Hỗ trợ</li>
+                    <li class="header-proName">Cộng đồng</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="flex items-center justify-between">
+            <button class="header-btn"><i class="fa-regular fa-user mr-3 lg:mr-7"></i></button>
+            <button class="header-btn hidden lg:block"><i
+                    class="fa-solid fa-map-location-dot mr-3 lg:mr-7"></i></i></button>
+            <button class="header-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+    </header>
+
+    <!-- body -->
+    <div class="w-full">
+
+
+        <!-- slider -->
+        <section class="jelly-donuts">
+            <div class="image-container">
+                <img src="https://storage-asset.msi.com/global/picture/banner/banner_170445142354207818e5028f0c1f969f8e17c9fbac.jpeg"
+                    alt="Image 1" />
+                <img src="https://storage-asset.msi.com/global/picture/banner/banner_1712912232857276918c110766fbe12e2716453c30.jpeg"
+                    alt="Image 2" />
+                <img src="https://storage-asset.msi.com/global/picture/banner/banner_1704425013843a4d42330d97624d785c0f6e5c085e.jpeg"
+                    alt="Image 3" />
+                <div class="anou left-0 bottom-[-90px] md:bottom-0 flex flex-col items-center md:flex-row">
+                    <span class="text-[18px] text-white">Announcement</span>
+                    <div class="hidden md:block line-slider"></div>
+                    <p class="text-white">
+                        Chúng tôi vui mừng thông báo rằng chúng tôi sẽ ra mắt Dịch vụ hỗ trợ máy tính từ xa cho người
+                        dùng
+                        máy tính xách tay MSI tại Việt Nam. Vui lòng bấm vào đây để tìm hiểu thêm
+                        <span class="underline ml-2 cursor-pointer">More <i
+                                class="fa-solid fa-chevron-right"></i></span>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- products component 1 -->
+        <div class="w-full mt-[150px] md:mt-[60px]">
+            <h2 class="font-bold text-center text-[22px] lg:text-[36px] text-[#222222]">Discover the Latest MSI
+                Innovations</h2>
+
+            <div class="px-[30px] w-full flex flex-col md:flex-row items-center justify-between">
+                <div
+                    class="p-[15px] min-h-[100px] md:min-h-[290px] cursor-pointer p-box flex flex-col items-center w-full md:w-[30%]">
+                    <div class="product-img-container">
+                        <img class="p-img" src="./images/p1.jpeg" alt="">
+                    </div>
+                    <h4 class="text-[18px] text-center font-bold text-[#222222]">Claw A1M</h4>
+                    <p class="text-center">Grip and Game</p>
+                </div>
+                <div
+                    class="p-[15px] min-h-[100px] md:min-h-[290px] cursor-pointer p-box flex flex-col items-center w-full md:w-[30%]">
+                    <div class="product-img-container">
+                        <img class="p-img" src="./images/p2.jpeg" alt="">
+                    </div>
+                    <h4 class="text-[18px] text-center font-bold text-[#222222]">QD-OLED Series Gaming Monitors</h4>
+                    <p class="text-center">Brighter Colors, Sublime Black Levels</p>
+                </div>
+                <div
+                    class="p-[15px] min-h-[100px] md:min-h-[290px] cursor-pointer p-box flex flex-col items-center w-full md:w-[30%]">
+                    <div class="product-img-container">
+                        <img class="p-img" src="./images/p3.jpeg" alt="">
+                    </div>
+                    <h4 class="text-[18px] text-center font-bold text-[#222222]">GeForce RTX™ 40 GAMING Series</h4>
+                    <p class="text-center">Play Hard Stay Silent</p>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- features component for mobile, tablet-->
+        <div class="my-[65px] py-[60px] w-full bg-[#fafafa] block lg:hidden">
+            <h2 class="text-center font-bold text-[22px] text-[#222222]">Trao quyền cho doanh nghiệp của bạn với các
+                giải pháp AIoT </h2>
+
+            <div class="f-slider-container mt-4">
+                <div class="f-slider">
+                    <div class="f-slide">
+                        <img class="f-image" src="./images/f1.jpeg" alt="Slide 1">
+                        <div class="w-full flex flex-col items-center mt-2">
+                            <span class="text-[17px] font-bold mt-1">Giải pháp sạc EV</span>
+                            <p class="mt-1">Sạc thông minh cho doanh nghiệp và gia đình</p>
+                        </div>
+                    </div>
+                    <div class="f-slide">
+                        <img class="f-image" src="./images/f2.jpeg" alt="Slide 2">
+                        <div class="w-full flex flex-col items-center mt-2">
+                            <span class="text-[17px] font-bold mt-1">Robot di động tự động (AMR)</span>
+                            <p class="mt-1">AI, tự động hoá và Robotics</p>
+                        </div>
+                    </div>
+                    <div class="f-slide">
+                        <img class="f-image" src="./images/f3.jpeg" alt="Slide 3">
+                        <div class="w-full flex flex-col items-center mt-2">
+                            <span class="text-[17px] font-bold mt-1">AIoT & Giải pháp công nghiệp</span>
+                            <p class="mt-1">Cung cấp bo mạch & hệ thống nhúng với sự hỗ trợ lâu dài</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="f-slider-dots">
+                    <span class="f-dot"></span>
+                    <span class="f-dot"></span>
+                    <span class="f-dot"></span>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- features component for laptop -->
+        <div class="my-[65px] py-[60px] w-full bg-[#fafafa] px-[15px] hidden lg:block">
+            <h2 class="text-center font-bold text-[36px] text-[#222222]">Trao quyền cho doanh nghiệp của bạn với các
+                giải pháp AIoT </h2>
+            <div class="w-full px-[35px] flex items-start mt-4 justify-between">
+                <div class="cursor-pointer p-box flex flex-col items-center w-[24%] h-[545px]">
+                    <div class="i-container-col">
+                        <img class="p-img" src="./images/f1.jpeg" alt="">
+                    </div>
+                    <h4 class="text-[18px] text-center font-bold text-[#222222] ellipsis-text">Giải pháp sạc EV</h4>
+                    <p class="text-center ellipsis-text">Cung cấp bo mạch & hệ thống nhúng với sự hỗ trợ lâu dài</p>
+                </div>
+                <div class="w-[24%] flex flex-col justify-between items-center h-[545px]">
+                    <div class="cursor-pointer p-box flex flex-col items-center w-full">
+                        <div class="product-img-container2">
+                            <img class="p-img" src="./images/f4.jpeg" alt="">
+                        </div>
+                        <h4 class="text-[18px] text-center font-bold text-[#222222] ellipsis-text">Máy chủ, Mạng & IIoT
+                        </h4>
+                        <p class="text-center ellipsis-text">Tiền thân là nhà cung cấp phần cứng toàn cầu</p>
+                    </div>
+                    <div class="cursor-pointer p-box flex flex-col items-center w-full">
+                        <div class="product-img-container2">
+                            <img class="p-img" src="./images/f3.jpeg" alt="">
+                        </div>
+                        <h4 class="text-[18px] text-center font-bold text-[#222222] ellipsis-text">AIoT & Giải pháp Công
+                            nghiệp</h4>
+                        <p class="text-center ellipsis-text">Cung cấp bo mạch & hệ thống nhúng với sự hỗ trợ lâu dài</p>
+                    </div>
+                </div>
+                <div class="w-[24%] flex flex-col justify-between items-center h-[545px]">
+                    <div class="cursor-pointer p-box flex flex-col items-center w-full">
+                        <div class="product-img-container2">
+                            <img class="p-img" src="./images/f5.jpeg" alt="">
+                        </div>
+                        <h4 class="text-[18px] text-center font-bold text-[#222222] ellipsis-text">Rugged Tablet </h4>
+                        <p class="text-center ellipsis-text">Dịch vụ thiết kế và sản xuất chuyên nghiệp</p>
+                    </div>
+                    <div class="cursor-pointer p-box flex flex-col items-center w-full">
+                        <div class="product-img-container2">
+                            <img class="p-img" src="./images/f2.jpeg" alt="">
+                        </div>
+                        <h4 class="text-[18px] text-center font-bold text-[#222222] ellipsis-text">Robot di động tự động
+                            (AMR)</h4>
+                        <p class="text-center ellipsis-text">AI, Tự động hóa và Robotics</p>
+                    </div>
+                </div>
+                <div class="w-[24%] flex flex-col justify-between items-center h-[545px]">
+                    <div class="cursor-pointer p-box flex flex-col items-center w-full">
+                        <div class="product-img-container2">
+                            <img class="p-img" src="./images/f6.jpeg" alt="">
+                        </div>
+                        <h4 class="text-[18px] text-center font-bold text-[#222222] ellipsis-text">Automotive và thương
+                            mại
+                        </h4>
+                        <p class="text-center ellipsis-text">Đối tác ODM tốt nhất của bạn về Giải pháp AIoT</p>
+                    </div>
+                    <div class="cursor-pointer p-box flex flex-col items-center w-full">
+                        <div class="product-img-container2">
+                            <img class="p-img" src="./images/f7.jpeg" alt="">
+                        </div>
+                        <h4 class="text-[18px] text-center font-bold text-[#222222] ellipsis-text">Giải pháp FUTORO</h4>
+                        <p class="text-center ellipsis-text">Dẫn đầu toàn cầu về thông tin giải trí và viễn thông trên
+                            xe</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- future smart -->
+        <div>
+            <h2 class="text-center mb-[52px] font-bold text-[22px] lg:text-[36px]">
+                The Future of Smart
+            </h2>
+            <div class="smart-items grid grid-cols-4 lg:grid-cols-7 gap-4">
+            </div>
+        </div>
+
+        <!-- ... -->
+        <div class="mt-[50px] w-full">
+            <div class="w-full grid gap-4 grid-cols-2 md:grid-cols-4">
+                <div class="flex flex-col items-center">
+                    <i class="fa-regular fa-square-plus text-[40px]"></i>
+                    <h5 class="text-center hover:underline cursor-pointer">Đăng ký sản phẩm</h5>
+                </div>
+                <div class="flex flex-col items-center">
+                    <i class="fa-solid fa-headphones-simple text-[40px]"></i>
+                    <h5 class="text-center hover:underline cursor-pointer">Hỗ trợ</h5>
+                </div>
+                <div class="flex flex-col items-center">
+                    <i class="fa-solid fa-film text-[40px]"></i>
+                    <h5 class="text-center hover:underline cursor-pointer">Video</h5>
+                </div>
+                <div class="flex flex-col items-center">
+                    <i class="fa-regular fa-comments text-[40px]"></i>
+                    <h5 class="text-center hover:underline cursor-pointer">Diễn đàn MSI</h5>
+                </div>
+            </div>
+        </div>
+
+        <!-- ... -->
+        <div class="w-full mt-[45px]">
+            <div class="w-full flex flex-col lg:flex-row lg:justify-between items-center px-[30px]">
+                <div class="w-[95%] lg:w-[49%] relative ticket-p">
+                    <img src="https://storage-asset.msi.com/frontend/imgs/reward2.webp" class="w-full" alt="">
+                    <div class="absolute left-0 bottom-0 px-[45px] bg-cus h-[75px] w-full">
+                        <h3 class="ticket-t font-bold">Chương trình tích điểm thưởng MSI</h3>
+                        <h5 class="ticket-t">Start Earning Point And Get Cool Stuff!</h5>
+                    </div>
+                </div>
+                <div class="w-[95%] lg:w-[49%] relative ticket-p mt-5 lg:mt-0">
+                    <img src="https://storage-asset.msi.com/frontend/imgs/insider.webp" class="w-full" alt="">
+                    <div class="absolute left-0 bottom-0 px-[45px] bg-cus h-[75px] w-full">
+                        <h3 class="ticket-t font-bold">MSI Insider</h3>
+                        <h5 class="ticket-t">Wednesdays at 8AM PST/16:00 CET</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div class="w-full py-[45px] text-[#696969] hidden lg:block">
+        <div class="w-full px-[25px] flex items-start justify-between">
+            <div class="flex flex-col">
+                <h5 class="font-bold text-[22px]">Cộng đồng</h5>
+                <ul class="flex flex-col mt-4 footer-list">
+                    <li>Tin tức từ MSI</li>
+                    <li>Blog</li>
+                    <li>Video</li>
+                    <li>Mạng xã hội</li>
+                    <li>Diễn đàn</li>
+                    <li>Đội game</li>
+                    <li>Chia sẻ từ khách hàng</li>
+                </ul>
+            </div>
+
+            <div class="flex flex-col">
+                <h5 class="font-bold text-[22px]">Hỗ trợ</h5>
+                <ul class="flex flex-col mt-4 footer-list">
+                    <li>Tải xuống</li>
+                    <li>Trung tâm thành viên</li>
+                    <li>Chăm sóc khách hàng trực tuyến</li>
+                    <li>Địa chỉ trung tâm bảo hành</li>
+                    <li>Bảo hành</li>
+                    <li>Hỗ trợ từ xa</li>
+                </ul>
+            </div>
+
+            <div class="flex flex-col">
+                <h5 class="font-bold text-[22px]">Tin tức</h5>
+                <ul class="flex flex-col mt-4 footer-list">
+                    <li>Báo chí</li>
+                    <li>Giải thưởng</li>
+                    <li>Videos</li>
+                    <li>RSS</li>
+                    <li>Lời chia sẻ</li>
+                    <li>Blogs</li>
+                    <li>Tin tức</li>
+                </ul>
+            </div>
+
+            <div class="flex flex-col">
+                <h5 class="font-bold text-[22px]">Về MSI</h5>
+                <ul class="flex flex-col mt-4 footer-list">
+                    <li>Về MSI</li>
+                    <li>Tầm nhìn và sứ mệnh</li>
+                    <li>Câu chuyện thương hiệu</li>
+                    <li>Thông tin cho nhà đầu tư</li>
+                    <li>Không ngừng sáng tạo</li>
+                    <li>Chứng nhận</li>
+                    <li>CRS</li>
+                    <li>Tiêu chuẩn về chất lượng</li>
+                </ul>
+            </div>
+
+            <div class="flex flex-col">
+                <h5 class="font-bold text-[22px]">Truyền thông</h5>
+                <ul class="flex flex-col mt-4 footer-list">
+                    <li>Cẩm nang sản phẩm</li>
+                    <li>Hình nền</li>
+                    <li>Ứng dụng MSI</li>
+                    <li>Tính công suất PSU</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- footer for mobile tablet -->
+    <div class="w-full mt-[45px] mb-[50px] block lg:hidden text-[#696969]">
+        <div class="vertical-tabs">
+            <div class="tab-item" onclick="toggleTab(1)">Cộng đồng <i class="fa-solid fa-plus"></i></div>
+            <div class="tab-content" id="tab1">
+                <ul class="flex flex-col mt-4 footer-list2">
+                    <li>Tin tức từ MSI</li>
+                    <li>Blog</li>
+                    <li>Video</li>
+                    <li>Mạng xã hội</li>
+                    <li>Diễn đàn</li>
+                    <li>Đội game</li>
+                    <li>Chia sẻ từ khách hàng</li>
+                </ul>
+            </div>
+
+            <div class="tab-item" onclick="toggleTab(2)">Hỗ trợ <i class="fa-solid fa-plus"></i></div>
+            <div class="tab-content" id="tab2">
+                <ul class="flex flex-col mt-4 footer-list2">
+                    <li>Tải xuống</li>
+                    <li>Trung tâm thành viên</li>
+                    <li>Chăm sóc khách hàng trực tuyến</li>
+                    <li>Địa chỉ trung tâm bảo hành</li>
+                    <li>Bảo hành</li>
+                    <li>Hỗ trợ từ xa</li>
+                </ul>
+            </div>
+
+            <div class="tab-item" onclick="toggleTab(3)">Tin tức <i class="fa-solid fa-plus"></i></div>
+            <div class="tab-content" id="tab3">
+                <ul class="flex flex-col mt-4 footer-list2">
+                    <li>Báo chí</li>
+                    <li>Giải thưởng</li>
+                    <li>Videos</li>
+                    <li>RSS</li>
+                    <li>Lời chia sẻ</li>
+                    <li>Blogs</li>
+                    <li>Tin tức</li>
+                </ul>
+            </div>
+
+            <div class="tab-item" onclick="toggleTab(4)">Về MSI <i class="fa-solid fa-plus"></i></div>
+            <div class="tab-content" id="tab4">
+                <ul class="flex flex-col mt-4 footer-list2">
+                    <li>Về MSI</li>
+                    <li>Tầm nhìn và sứ mệnh</li>
+                    <li>Câu chuyện thương hiệu</li>
+                    <li>Thông tin cho nhà đầu tư</li>
+                    <li>Không ngừng sáng tạo</li>
+                    <li>Chứng nhận</li>
+                    <li>CRS</li>
+                    <li>Tiêu chuẩn về chất lượng</li>
+                </ul>
+            </div>
+
+            <div class="tab-item" onclick="toggleTab(5)">Truyền thông <i class="fa-solid fa-plus"></i></div>
+            <div class="tab-content" id="tab5">
+                <ul class="flex flex-col mt-4 footer-list2">
+                    <li>Cẩm nang sản phẩm</li>
+                    <li>Hình nền</li>
+                    <li>Ứng dụng MSI</li>
+                    <li>Tính công suất PSU</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="./index.js"></script>
+<script>
+    const listHeaderNames = document.getElementsByClassName("header-proName")
+    for (let i = 0; i < listHeaderNames.length; i++) {
+        let headerName = listHeaderNames[i];
+        headerName.textContent = headerName.textContent.toUpperCase();
+    }
+</script>
+
+</html>
